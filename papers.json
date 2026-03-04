@@ -4,4 +4,10 @@
     "title": "Super Transformer",
     "conf": "CVPR2026"
   }
+,
+  {
+    "authors": "Jeff Bezos and Yusuke Matui",
+    "title": "SIFT is all you need",
+    "conf": "VLDB2026"
+  }
 ]

@@ -6,11 +6,24 @@ OUTPUT   = "index.html"
 PLACEHOLDER = "<!-- PUBLICATIONS -->"
 
 
+def abbreviate_authors(authors_str):
+    """Convert 'Firstname Lastname and ...' to 'F. Lastname and ...'"""
+    names = authors_str.split(" and ")
+    abbreviated = []
+    for name in names:
+        parts = name.strip().split()
+        if len(parts) >= 2:
+            abbreviated.append(f"{parts[0][0]}. {' '.join(parts[1:])}")
+        else:
+            abbreviated.append(name.strip())
+    return " and ".join(abbreviated)
+
+
 def render_paper(paper):
     lines = []
     lines.append("      <li>")
     lines.append(f'        <div class="pub-title">{paper["title"]}</div>')
-    lines.append(f'        <div class="pub-authors">{paper["authors"]}</div>')
+    lines.append(f'        <div class="pub-authors">{abbreviate_authors(paper["authors"])}</div>')
     lines.append(f'        <div class="pub-venue">{paper["conf"]}</div>')
 
     # optional links: "paper", "code", "project", "slides", "video"
