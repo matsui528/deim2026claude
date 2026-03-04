@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  background: #fafaf8;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+a {
+  color: #2a5db0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Header ---- */
+header {
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 48px 0 40px;
+}
+
+.profile {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.profile img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e0e0e0;
+  flex-shrink: 0;
+}
+
+.profile-text h1 {
+  font-size: 2.2rem;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  margin-bottom: 4px;
+}
+
+.profile-text .subtitle {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.profile-text .email {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  color: #444;
+}
+
+.profile-text .links {
+  margin-top: 14px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  font-size: 0.95rem;
+  color: #2a5db0;
+  border: 1px solid #2a5db0;
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+
+.links a:hover {
+  background: #2a5db0;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ---- Main content ---- */
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+section h2 {
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #888;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+/* ---- About ---- */
+.about p {
+  font-size: 1.05rem;
+  color: #333;
+}
+
+/* ---- Publications ---- */
+.pub-list {
+  list-style: none;
+}
+
+.pub-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.pub-list li:last-child {
+  border-bottom: none;
+}
+
+.pub-title {
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.pub-authors {
+  font-size: 0.97rem;
+  color: #555;
+  margin-top: 2px;
+}
+
+.pub-venue {
+  font-size: 0.95rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.pub-links {
+  margin-top: 6px;
+  display: flex;
+  gap: 10px;
+}
+
+.pub-links a {
+  font-size: 0.88rem;
+  color: #2a5db0;
+  border: 1px solid #c0d0e8;
+  padding: 1px 8px;
+  border-radius: 2px;
+}
+
+.pub-links a:hover {
+  background: #2a5db0;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ---- Footer ---- */
+footer {
+  text-align: center;
+  font-size: 0.78rem;
+  color: #bbb;
+  padding: 24px;
+}
